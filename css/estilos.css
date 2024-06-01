@@ -1,0 +1,352 @@
+@font-face {
+    font-family: UFO;
+    src: url("starjedi/Starjedi.ttf");
+}
+
+body{
+    margin: 0px;
+    background-color: black;
+}
+
+#fundo{
+    background-color: yellow; /*aliceblue*/
+    width: 98%;
+    height: 95vh;
+    margin: 1% 2%;
+    padding: 5px;
+}
+
+#area_jogo{
+    background: url("../img/fundo_star.png");
+    width: 100%;
+    height: 100%;
+}
+
+#alerta{
+    display: block; /* block */
+    text-align: center;
+    width: 90%;
+    height: 70%;
+    margin: 5%;
+    padding: 10px;
+    font-family: 'UFO';
+    cursor: pointer;
+    background-color: transparent;
+}
+
+#game_over{
+    display: none; /* block */
+    text-align: center;
+    width: 90%;
+    height: 70%;
+    margin: 5%;
+    padding: 10px;
+    font-family: 'UFO';
+    cursor: pointer;
+    background-color: transparent;
+}
+
+#you_win{
+    display: none; /* block */
+    text-align: center;
+    width: 90%;
+    height: 70%;
+    margin: 5%;
+    padding: 10px;
+    font-family: 'UFO';
+    cursor: pointer;
+    background-color: transparent;
+}
+
+#titulo{
+    color: black;
+    -webkit-text-stroke-width: 3px; /* largura da borda */
+    -webkit-text-stroke-color: yellow; /* cor da borda */
+    font-size: 85px;
+    letter-spacing: 0.1em;
+}
+
+#sub_title{
+    font-size: 22px;
+    color: black;
+    -webkit-text-stroke-width: 1px; /* largura da borda */
+    -webkit-text-stroke-color: aliceblue; /* cor da borda */
+}
+
+#info{
+    color: aliceblue;
+}
+
+b{
+    color: yellow;
+}
+
+/*******PLAYER********/
+
+#player {
+    width: 103px; /* 102.2 */
+    height: 84px;
+    position: absolute;
+    background-image: url("../img/x_wing.png");
+
+    animation: p_player .9s steps(5) infinite;
+    -webkit-animation: p_player .9s steps(5) infinite;
+    -moz-animation: p_player .9s steps(5) infinite;
+    -ms-animation: p_player .9s steps(5) infinite;
+    -o-animation: p_player .9s steps(5) infinite;
+}
+
+@keyframes p_player {
+    from { background-position: 0px;}
+    to { background-position: -508px;}
+}
+
+@-webkit-keyframes p_player {
+    from { background-position: 0px;}
+    to { background-position: -508px;}
+}
+
+@-moz-keyframes p_player {
+    from { background-position: 0px;}
+    to { background-position: -508px;}
+}
+
+@-ms-keyframes p_player {
+    from { background-position: 0px;}
+    to { background-position: -508px;}
+}
+
+@-o-keyframes p_player {
+    from { background-position: 0px;}
+    to { background-position: -508px;}
+}
+
+/*******IMPÉRIO********/
+
+[id*="tie_fighter"] {
+    width: 76px; /* 75.2 */
+    height: 100px;
+    position: absolute;
+    background-image: url("../img/tie_fighter.png");
+    right: 0px;
+
+    animation: p_tie_fighter .9s steps(5) infinite;
+    -webkit-animation: p_tie_fighter .9s steps(5) infinite;
+    -moz-animation: p_tie_fighter .9s steps(5) infinite;
+    -ms-animation: p_tie_fighter .9s steps(5) infinite;
+    -o-animation: p_tie_fighter .9s steps(5) infinite;
+}
+
+@keyframes p_tie_fighter {
+    from { background-position: 0px;}
+    to { background-position: -372px;}
+}
+
+@-webkit-keyframes p_tie_fighter {
+    from { background-position: 0px;}
+    to { background-position: -372px;}
+}
+
+@-moz-keyframes p_tie_fighter {
+    from { background-position: 0px;}
+    to { background-position: -372px;}
+}
+
+@-ms-keyframes p_tie_fighter {
+    from { background-position: 0px;}
+    to { background-position: -372px;}
+}
+
+@-o-keyframes p_tie_fighter {
+    from { background-position: 0px;}
+    to { background-position: -372px;}
+}
+
+[id*="tie_bomber"] {
+    width: 101px; /* 101,2 */
+    height: 89px;
+    position: absolute;
+    background-image: url("../img/tie_bomber.png");
+    right: 0px;
+
+    animation: p_tie_bomber .9s steps(5) infinite;
+    -webkit-animation: p_tie_bomber .9s steps(5) infinite;
+    -moz-animation: p_tie_bomber .9s steps(5) infinite;
+    -ms-animation: p_tie_bomber .9s steps(5) infinite;
+    -o-animation: p_tie_bomber .9s steps(5) infinite;
+}
+
+@keyframes p_tie_bomber {
+    from { background-position: 0px;}
+    to { background-position: -504px;}
+}
+
+@-webkit-keyframes p_tie_bomber {
+    from { background-position: 0px;}
+    to { background-position: -504px;}
+}
+
+@-moz-keyframes p_tie_bomber {
+    from { background-position: 0px;}
+    to { background-position: -504px;}
+}
+
+@-ms-keyframes p_tie_bomber {
+    from { background-position: 0px;}
+    to { background-position: -504px;}
+}
+
+@-o-keyframes p_tie_bomber {
+    from { background-position: 0px;}
+    to { background-position: -504px;}
+}
+
+[id*="tie_intercepter"] {
+    width: 91px; /* 91,2 */
+    height: 73px;
+    position: absolute;
+    background-image: url("../img/tie_intercepter.png");
+    right: 0px;
+
+    animation: p_tie_intercepter .9s steps(5) infinite;
+    -webkit-animation: p_tie_intercepter .9s steps(5) infinite;
+    -moz-animation: p_tie_intercepter .9s steps(5) infinite;
+    -ms-animation: p_tie_intercepter .9s steps(5) infinite;
+    -o-animation: p_tie_intercepter .9s steps(5) infinite;
+}
+
+@keyframes p_tie_intercepter {
+    from { background-position: 0px;}
+    to { background-position: -456px;}
+}
+
+@-webkit-keyframes p_tie_intercepter {
+    from { background-position: 0px;}
+    to { background-position: -456px;}
+}
+
+@-moz-keyframes p_tie_intercepter {
+    from { background-position: 0px;}
+    to { background-position: -456px;}
+}
+
+@-ms-keyframes p_tie_intercepter {
+    from { background-position: 0px;}
+    to { background-position: -456px;}
+}
+
+@-o-keyframes p_tie_intercepter {
+    from { background-position: 0px;}
+    to { background-position: -456px;}
+}
+
+/* LASER */
+
+[id*="green_laser"] {
+    width: 28px;
+    height: 5px;
+    position: absolute;
+    background-image: url("../img/green_laser.png");
+}
+
+[id*="red_laser"] {
+    width: 28px;
+    height: 5px;
+    position: absolute;
+    background-image: url("../img/red_laser.png");
+}
+
+#lifebg {
+    height: 25px;
+    width: 208px;
+    position: absolute;
+    left: 8px;
+    top: 10px;
+    background-color: rgb(0, 0, 0);
+    border:solid 5px yellow;
+    border-radius:20px;
+}
+
+#life {
+    height: 17px;
+    width: 200px;
+    position: absolute;
+    left: 12px;
+    top: 14px; 
+    background-color: greenyellow;
+    border:solid 5px transparent;
+    border-radius:20px;
+}
+
+[id*="impacto_player"] {
+    width: 64px; /* 63,75 */
+    height: 59px;
+    position: absolute;
+    background-image: url("../img/shoot_player.png");
+}
+
+#explosao {
+    width: 64px; /* 63,75 */
+    height: 59px;
+    position: absolute;
+    background-image: url("../img/explosao.png");
+    right: 0px;
+
+    animation: p_explosao .9s steps(4) infinite;
+    -webkit-animation: p_explosao .9s steps(4) infinite;
+    -moz-animation: p_explosao .9s steps(4) infinite;
+    -ms-animation: p_explosao .9s steps(4) infinite;
+    -o-animation: p_explosao .9s steps(4) infinite;
+}
+
+@keyframes p_explosao {
+    from { background-position: 0px;}
+    to { background-position: -255px;}
+}
+
+@-webkit-keyframes p_explosao {
+    from { background-position: 0px;}
+    to { background-position: -255px;}
+}
+
+@-moz-keyframes p_explosao {
+    from { background-position: 0px;}
+    to { background-position: -255px;}
+}
+
+@-ms-keyframes p_explosao {
+    from { background-position: 0px;}
+    to { background-position: -255px;}
+}
+
+@-o-keyframes p_explosao {
+    from { background-position: 0px;}
+    to { background-position: -255px;}
+}
+
+#imperio {
+    width: 50px; /* 63,75 */
+    height: 50px;
+    position: absolute;
+    background-image: url("../img/imperio.png");
+    top: 50px;
+    left: 8px;
+}
+
+#pontos{
+    position: absolute;
+    color: aliceblue;
+    left: 70px;
+    top: 55px;
+    font-size: 24px;
+    font-family: 'UFO';
+}
+
+#qtd_vidas{
+    position: absolute;
+    color: aliceblue;
+    left: 230px;
+    top: 2px;
+    font-size: 24px;
+    font-family: 'UFO';
+}
