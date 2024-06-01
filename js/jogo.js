@@ -284,10 +284,7 @@ function movimenta_player() {
 
             $('#sons_repetidos').append('<audio src="sons/shoot.mp3" preload="auto" id="shoot'+count_green_laser+'"></audio>')
             var shoot = document.getElementById("shoot"+count_green_laser);
-            // shoot.play()
-    
-            // window.clearTimeout(ref);
-            // window.setTimeout(create_shoot, 1000);
+            shoot.play()
             
             var top_player = parseInt($("#player").css("top"))
             var left_player = parseInt($("#player").css("left"))
@@ -358,7 +355,7 @@ function analisa_colisoes() {
 
                 $('#sons_repetidos').append('<audio src="sons/explosao_inimigos.mp3" preload="auto" id="explode'+tie_fighter.id+'"></audio>')
                 var explode = document.getElementById("explode"+tie_fighter.id);
-                // explode.play()
+                explode.play()
 
                 $('#'+tie_fighter.id).remove()
         
@@ -388,7 +385,7 @@ function analisa_colisoes() {
 
                 $('#sons_repetidos').append('<audio src="sons/explosao_inimigos.mp3" preload="auto" id="explode'+tie_bomber.id+'"></audio>')
                 var explode = document.getElementById("explode"+tie_bomber.id);
-                // explode.play()
+                explode.play()
 
                 $('#'+tie_bomber.id).remove()
         
@@ -418,7 +415,7 @@ function analisa_colisoes() {
 
                 $('#sons_repetidos').append('<audio src="sons/explosao_inimigos.mp3" preload="auto" id="explode'+tie_intercepter.id+'"></audio>')
                 var explode = document.getElementById("explode"+tie_intercepter.id);
-                // explode.play()
+                explode.play()
 
                 $('#'+tie_intercepter.id).remove()
         
@@ -546,10 +543,10 @@ function valida_pontuacao() {
 function loop() {
     somjogo.addEventListener("ended", function(){
         somjogo.curentTime = 0
-        // somjogo.play()
+        somjogo.play()
     }, false) //Verifica se o som acabou
 
-    // somjogo.play()
+       somjogo.play()
 
     if (wait_collision_player == 0) {
         setTimeout(function() {
