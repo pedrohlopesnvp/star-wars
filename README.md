@@ -1,5 +1,5 @@
 # Star Wars
-### The ultimate Battleship for the Galaxy!
+### The ultimate War for the Galaxy!
 
 This is a Star Wars game with JQuery, HTML and CSS.
 
